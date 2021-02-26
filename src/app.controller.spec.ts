@@ -14,9 +14,19 @@ describe('AppController', () => {
     appController = app.get<AppController>(AppController);
   });
 
-  describe('root', () => {
-    it('should return "Hello World!"', () => {
-      expect(appController.getHello()).toBe('Hello World!');
+  describe('hello/en', () => {
+    it('should return "Hello World in English!"', () => {
+      const result = 'Hello World! Nest'
+      expect(appController.getHello()).toBe(result);
     });
   });
+
+  describe('hello/fr', () => {
+    it('should return "Hello World in Frances!"', () => {
+      const result = 'Bonjour le Monde! Nest'
+      expect(appController.getBonjour()).toBe(result);
+    });
+  });
+
+
 });

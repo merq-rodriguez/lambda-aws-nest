@@ -23,4 +23,15 @@ sls offline start
 sls logs -f main
 ```
 
+# Endpoints local
+
+```
+GET http://localhost:3000/hello/en
+```
+
+```
+GET http://localhost:3000/hello/fr
+```
+
+
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
